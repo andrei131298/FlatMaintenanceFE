@@ -1,0 +1,19 @@
+<div class="admin" [formGroup]="associationForm">
+  <div class="login__credential">
+    <label class="login__credential-label">Association name:</label>
+    <input
+      class="login__credential-input"
+      formControlName="associationName"
+      type="text"
+    />
+  </div>
+  <div class="login__input">
+    <label class="login__credential-label">Bank account:</label>
+    <input
+      class="login__credential-input"
+      formControlName="bankAccount"
+      type="text"
+    />
+  </div>
+</div>
+<button (click)="submitAssociation()">Submit</button>
